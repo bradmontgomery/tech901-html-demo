@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+
+<html lang="en" data-bs-theme="dark">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Barriecito&display=swap" rel="stylesheet">
+        <link href="styles.css" rel="stylesheet">
+        <title>⚡Tech901 HTML Demo</title>
+    </head>
+    <body>
+        <!-- NAV bar -->
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="index.html">⚡Tech901 HTML Demo</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#navbarSupportedContent"
+                      aria-controls="navbarSupportedContent"
+                      aria-expanded="false"
+                      aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link" href="hobbies.html">Hobbies</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="work.html">Work</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="about.html">About</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+
+        <!-- Content -->
+        <div class="container">
+          <h1>Work!?</h1>
+          <h2>🕰️ <small id="clock"></small></h2>
+          <div class="alert alert-danger" role="alert">
+            ⚠️<strong>Danger</strong> This stuff done to support <a href="hobbies.html">hobbies</a>
+          </div>
+          <p>There are two ways of constructing a software design. One way is to make it so simple that there are obviously no deficiencies. And the other way is to make it so complicated that there are no obvious deficiencies. (C.A.R. Hoare) I’ve noticed lately that the paranoid fear of computers becoming intelligent and taking over the world has almost entirely disappeared from the common culture. Near as I can tell, this coincides with the release of MS-DOS. (Larry DeLuca) The most amazing achievement of the computer software industry is its continuing cancellation of the steady and staggering gains made by the computer hardware industry. (Henry Petroski) 640K ought to be enough for anybody. (Bill Gates, 1981) Computers are useless. They can only give you answers. (Pablo Picasso)</p>
+          <p>The bulk of all patents are crap. Spending time reading them is stupid. It’s up to the patent owner to do so, and to enforce them. (Linus Torvalds) There are only two kinds of programming languages: those people always bitch about and those nobody uses. (Bjarne Stroustrup) I’ve noticed lately that the paranoid fear of computers becoming intelligent and taking over the world has almost entirely disappeared from the common culture. Near as I can tell, this coincides with the release of MS-DOS. (Larry DeLuca) That’s what’s cool about working with computers. They don’t argue, they remember everything, and they don’t drink all your beer. (Paul Leary)</p>
+          <p>The function of good software is to make the complex appear to be simple. (Grady Booch) Don’t worry if it doesn’t work right. If everything did, you’d be out of a job. (Mosher’s Law of Software Engineering) Most software today is very much like an Egyptian pyramid with millions of bricks piled on top of each other, with no structural integrity, but just done by brute force and thousands of slaves. (Alan Kay) Programming is like sex: one mistake and you’re providing support for a lifetime. (Michael Sinz)</p>
+        </div>
+        <script>
+          function setTime() {
+            let clock = document.getElementById("clock");
+            let date = new Date();
+            clock.innerText = date;
+          }
+
+          document.addEventListener("DOMContentLoaded", () => {
+            setTime();
+            setInterval(setTime, 1000); // Now call this every 1000ms (i.e. 1second)
+          });
+        </script>
+    </body>
+</html>
